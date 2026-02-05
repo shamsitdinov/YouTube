@@ -19,7 +19,7 @@ const Navbar = ({ navIcons, activeIcon, setActiveIcon, apiYoutube, searchVideo, 
             <span className="text-2xl text-white">
               <GiHamburgerMenu />
             </span>
-            <a href="/" className="flex gap-2 font-serif">
+            <a href="/" className="flex gap-3 font-serif">
               <img className=" w-9 " src={icon} alt="" />
               <span className=" uppercase text-white">You tube</span>
             </a>
