@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import BigVideo from "./BigVideo";
 import Videos from "./Videos";
-import { icons } from "../data";
+import { icons } from "../Data";
 import NavIcons from "./NavIcons";
 import { apiYoutube } from "../API";
 import Footer from "./Footer";
