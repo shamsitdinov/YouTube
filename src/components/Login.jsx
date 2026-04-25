@@ -1,15 +1,14 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
+// import { Link, useNavigate } from "react-router-dom";
+import { auth } from "./firebase";
 import GoogleButton from "react-google-button";
-
 const Login = ({ googleAccount }) => {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const loginUser = async (e) => {
     e.preventDefault();
@@ -23,10 +22,10 @@ const Login = ({ googleAccount }) => {
         setFirstName("");
         setEmail("");
         setPassword("");
-        navigate("/info");
+        // navigate("/info");
       } else {
         alert("Please verify your email");
-        navigate("/");
+        // navigate("/");
       }
     } catch (error) {
       console.log(error);
@@ -75,9 +74,9 @@ const Login = ({ googleAccount }) => {
         >
           Login
         </button>
-        <Link to="/register" className="text-center">
+        {/* <Link to="/register" className="text-center">
           Don't you have an account?
-        </Link>
+        </Link> */}
         <div className="flex justify-center items-center">
           <GoogleButton onClick={googleAccount} />
         </div>

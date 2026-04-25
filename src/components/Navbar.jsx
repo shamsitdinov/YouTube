@@ -3,7 +3,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { CiBellOn } from "react-icons/ci";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import icon from "../assets/YouTube_full-color_icon_(2017).svg.png";
-import NavIcons from "./NavIcons";
 const Navbar = ({ navIcons, activeIcon, setActiveIcon, apiYoutube, searchVideo, search, setSearch }) => {
   const selectType = (item) => {
     setActiveIcon(item);

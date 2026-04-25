@@ -4,7 +4,6 @@ import Cards from "./Cards";
 import BigVideo from "./BigVideo";
 import Videos from "./Videos";
 import { icons } from "../Data";
-import NavIcons from "./NavIcons";
 import { apiYoutube } from "../API";
 import Footer from "./Footer";
 import Register from "./Register";
@@ -74,10 +73,10 @@ const Main = () => {
         </div>
       </div> */}
 
-      {/* <Register /> */}
       {/* <Navbar searchVideo={searchVideo} search={search} setSearch={setSearch} apiYoutube={apiYoutube} /> */}
 
       <Navbar searchVideo={searchVideo} search={search} setSearch={setSearch} activeIcon={activeIcon} setActiveIcon={setActiveIcon} navIcons={navIcons} apiYoutube={apiYoutube} />
+      {/* <Register /> */}
       {showCards ? (
         <div className="grid grid-cols-21 max-md:grid-cols-1 ">
           <BigVideo currentVideo={currentVideo} />
