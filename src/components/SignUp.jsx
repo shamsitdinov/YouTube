@@ -15,9 +15,7 @@ const SignUp = ({ open, setOpen }) => {
           {truFalse ? <Route path="/register" element={<Register open={open} setOpen={setOpen} />} /> : <Route path="/login" element={<Login open={open} setOpen={setOpen} />} />}
           </Routes>
       </div>
-      <div>
-        <img src={img} alt="" />
-      </div>
+     
     </div>
   );
 };
